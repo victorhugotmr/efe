@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
+
+:root {
+  --main-color: #e69d0b;
+  --white: #d6d6d6;
+  --black: #171716;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Work Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+main{
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: calc(100dvh - 15dvh);
+  background-image: url(../imagens/politica.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.main__text{
+  position: absolute;
+  z-index: 10000;
+  color: var(--white);
+  width: 60dvw;
+  height: 30dvh;
+  text-align: center;
+  bottom: 15dvh;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.main__mais{
+  padding: .25rem .5rem;
+  background-color: var(--main-color);
+  color: var(--black);
+  font-weight: 800;
+  transition: background-color .3s;
+}
+
+.header{
+  height: 15dvh;
+  background: var(--white);
+  display: grid;
+  place-items: center;
+}
+
+
+
+.nav{
+  background: var(--black);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav a{
+  color: var(--white);
+}
+
+.header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 0.25rem;
+}
+
+.header nav ul li a{
+  color: var(--white);
+  transition: color .2s;
+}
+
+.header nav ul li a:hover,
+.header nav ul li a:focus {
+  color: var(--main-color);
+}
+
+.gradiente{
+  position: absolute;
+  background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.sections{
+  padding: .5rem;
+  margin-top: 1rem;
+  display: grid;
+  gap: .25rem;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.info__wrapper {
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info__wrapper  h2{
+  color: var(--main-color);
+  position: relative;
+}
+
+.info__wrapper  h2::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -4px;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: 40%;
+  background: var(--black);
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+
+.info__wrapper  h2:hover:after{
+  color: var(--black);
+  background: var(--main-color);
+  width: 20%;
+}
+
+.info__thumb img{
+  width: 300px;
+  height: 200px;
+  margin: .5rem 0;
+}
+
+.info__content{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info__content p{
+  text-align: justify;
+}
+
+
+button{
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  margin-top: .5rem;
+  border-radius: .25rem;
+}
+
+
+
+.main__mais:hover,
+.main__mais:focus{
+  background-color: var(--white);
+}
+
+.mais{
+  width: 5rem;
+  padding: 0.35rem;
+  background-color: var(--black);
+  color: var(--main-color);
+  -webkit-transition: background-color .3s ease-out;
+  -moz-transition: background-color .3s ease-out;
+  -o-transition: background-color .3s ease-out;
+  transition: background-color .3s ease-out;
+}
+
+.mais:hover,
+.main:focus{  
+  background-color: var(--main-color);
+  color: var(--black);
+}
+
+.mais a:visited{
+  color: var(--white)
+}
+
+footer{
+  margin-top: 1rem;
+  height: 10vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.copy p{
+  text-align: center;
+  padding: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
