@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Calculadora de Média</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>
+        Calculadora de Média
+      </h1>
+      <i class="fa-solid fa-graduation-cap"></i>
+    </div>
+  </header>
+  <main>
+    <div class="main-content">
+      <div class="notas-container">
+        <div class="notas-input">
+          <h3>Insira as notas</h3>
+          <form>
+            <input type="text" required id="inputMateria" placeholder="Nome da Matéria" pattern="[A-Za-z]{3,}">
+            <input type="number" required id="inputNota" placeholder="Nota" min="0" max="10">
+            <button type="submit">Adicionar</button>
+          </form>
+            
+          </div>
+          <div class="notas-media">
+            <table cellspacing="0">
+              <thead>
+                <tr>
+                  <th>
+                    Atividade:
+                  </th>
+                  <th>
+                    Nota:
+                  </th>
+                  <th>
+                    Situação:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                </tr>
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+          </div>
+      </div>
+        <div class="media-container">
+          <div class="media">            
+            <p>Média:</p>
+            <p id="mediaFinal"></p>
+            <p id="resultadoFinal"></p>
+          </div>
+        </div>
+    </div>
+  </main>
+  <script src="https://kit.fontawesome.com/71b4e182b5.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
