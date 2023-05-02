@@ -5,41 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Calculadora de Média</title>
+  <title>Contatos</title>
 </head>
 <body>
   <header>
     <div class="header-content">
       <h1>
-        Calculadora de Média
+        Contatos
       </h1>
-      <i class="fa-solid fa-graduation-cap"></i>
+      <i class="fa-solid fa-address-book"></i>
     </div>
   </header>
   <main>
     <div class="main-content">
-      <div class="notas-container">
-        <div class="notas-input">
-          <h3>Insira as notas</h3>
+      <div class="contatos-container">
+        <div class="contatos-input">
+          <h3>Insira as informações</h3>
           <form>
-            <input type="text" required id="inputMateria" placeholder="Nome da Matéria" pattern="[A-Za-z]{3,}">
-            <input type="number" required id="inputNota" placeholder="Nota" min="0" max="10">
+            <input type="text" id="inputContato" required placeholder="Nome do contato" pattern="[A-Za-z]{3,}">
+            <input type="text" id="inputNumero" required placeholder="Telefone" min="0">
             <button type="submit">Adicionar</button>
           </form>
             
           </div>
-          <div class="notas-media">
+          <div class="contatos-list">
             <table cellspacing="0">
               <thead>
                 <tr>
                   <th>
-                    Atividade:
+                    Nome:
                   </th>
                   <th>
-                    Nota:
-                  </th>
-                  <th>
-                    Situação:
+                    Telefone:
                   </th>
                 </tr>
               </thead>
@@ -52,11 +49,10 @@
             </table>
           </div>
       </div>
-        <div class="media-container">
-          <div class="media">            
-            <p>Média:</p>
-            <p id="mediaFinal"></p>
-            <p id="resultadoFinal"></p>
+        <div class="numeros-container">
+          <div class="numero">            
+            <p>Contatos:</p>
+            <p id="resultadoFinal">0</p>
           </div>
         </div>
     </div>

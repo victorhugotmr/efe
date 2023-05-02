@@ -33,6 +33,7 @@ input::-webkit-inner-spin-button {
     background: var(--scroll-bar-bg-color);
 }
 
+
 *::-webkit-scrollbar-thumb {
     background-color: var(--scroll-bar-color);
     border-radius: 20px;
@@ -87,12 +88,12 @@ header {
   background: var(--white);
 }
 
-.notas-container{
+.contatos-container{
   display: grid;
   height: 90%;
 }
 
-.notas-input{
+.contatos-input{
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -102,13 +103,13 @@ header {
   border-right: solid 2px var(--green);
 }
 
-.notas-input form{
+.contatos-input form{
   display: grid;
   width: 100%;
   gap: 1rem;
 }
 
-.notas-input input{
+.contatos-input input{
   padding: 0.5rem;
   font-size: 16px;
   border-radius: 1rem;
@@ -118,7 +119,7 @@ header {
   outline-color: var(--green);
 }
 
-.notas-input button{
+.contatos-input button{
   padding: 0.5rem;
   background: var(--green);
   color: var(--white);
@@ -129,7 +130,7 @@ header {
   transition: all .3s ease;
 }
 
-.notas-input button:hover {
+.contatos-input button:hover {
   background: var(--darkgreen);
   padding: .75rem;
   font-size: 1.15rem;
@@ -137,37 +138,37 @@ header {
   font-weight: bolder;
 }
 
-.notas-media{
+.contatos-list{
   grid-column: 2 / span 3;
   padding: 1rem;
   overflow: auto;
 }
 
-.notas-media table {
+.contatos-list table {
   width: 100%;
   text-align: center; 
 }
 
-.notas-media table th{
+.contatos-list table th{
   color: var(--black);
   border-bottom: 2px solid var(--green);
   padding: .5rem;
 }
 
 
-.notas-media tbody td{
+.contatos-list tbody td{
   padding: .5rem;
 }
 
-.media-container{
+.numeros-container{
   display: flex;
 }
 
-.media-container{
+.numeros-container{
   height: 10%;
 }
 
-.media{
+.numero{
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -178,12 +179,12 @@ header {
 }
 
 @media (max-width: 768px) {
-  .notas-container{
+  .contatos-container{
     display: flex;
     flex-direction: column;
   }
 
-  .notas-input{
+  .contatos-input{
     border-right: none;
   }
 }

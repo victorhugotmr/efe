@@ -1,44 +1,45 @@
 const form = document.querySelector("form");
-let inputMateria = document.querySelector("#inputMateria");
-let inputNota = document.querySelector("#inputNota");
+let inputContato = document.querySelector("#inputContato");
+let inputNumero = document.querySelector("#inputNumero");
 const tbody = document.querySelector("tbody")
-const materias = []
-const notas = []
-const mediaFinal = document.querySelector("#mediaFinal")
-const resultadoFinal = document.querySelector("#resultadoFinal")
+const contatos = []
+const numeros = []
+let contatosCadastrados = 0
 let linhas = "";
 
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  let materia = inputMateria.value;
-  let nota = inputNota.value;
+  let contato = inputContato.value;
+  let numero = inputNumero.value;
   let linha = "<tr>";
-      linha += `<td>${materia}</td>`;
-      linha += `<td>${nota}</td>`;
-      linha += `<td>${nota >= 7 ? `<i class="fa-solid fa-check" style="color: var(--green)"></i>` : `<i class="fa-solid fa-xmark" style="color: var(--red)"></i>`}</td>`;
+      linha += `<td>${contato}</td>`;
+      linha += `<td>${numero}</td>`;
       linha += "</tr>";
   linhas += linha
 
-  materias.push(materia)
-  notas.push(Number(nota))
+  contatos.push(contato)
+  numeros.push(Number(numero))
 
   tbody.innerHTML = linhas;
+
+  contatosCadastrados++
   
-  inputMateria.value = ""
-  inputNota.value = ""
+  inputContato.value = ""
+  inputNumero.value = ""
 
-  let notasTotal = 0;
 
-  for (let i = 0; i < notas.length; i++) {
-    notasTotal += notas[i]
-  }
-
-  const media = notasTotal / notas.length
-
-  console.log(media)
-
-  mediaFinal.innerHTML = media
-  resultadoFinal.innerHTML = media >= 7 ? `<p style="color: var(--green)">Aprovado</p>` : `<p style="color: var(--red)">Reprovado</p>`
+  resultadoFinal.innerHTML = contatosCadastrados
 });
+
+inputNumero.addEventListener("keyup", function (e) {
+
+  const regex = /^([0-9]{2})([0-9]{4,5})([0-9]{4})$/;
+
+  let str = e.target.value.replace(/[^0-9]/g, "").slice(0, 11);
+  const result = str.replace(regex, "($1)$2-$3");
+  console.log(result)
+
+  inputNumero.value = result;
+})
