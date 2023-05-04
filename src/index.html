@@ -1,63 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Contatos</title>
+  <title>Música e Música</title>
 </head>
+
 <body>
   <header>
-    <div class="header-content">
-      <h1>
-        Contatos
-      </h1>
-      <i class="fa-solid fa-address-book"></i>
+    <div class="header-container">
+      <div class="header-logo">
+        <img src="./images/logo.png" alt="Logo Música e Música">
+      </div>
+      <div class="header-links">
+        <nav>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#lancamentos">Lançamentos</a>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
-    <div class="main-content">
-      <div class="contatos-container">
-        <div class="contatos-input">
-          <h3>Insira as informações</h3>
-          <form>
-            <input type="text" id="inputContato" required placeholder="Nome do contato" pattern="[A-Za-z]{3,}">
-            <input type="text" id="inputNumero" required placeholder="Telefone" min="0">
-            <button type="submit">Adicionar</button>
-          </form>
-            
-          </div>
-          <div class="contatos-list">
-            <table cellspacing="0">
-              <thead>
-                <tr>
-                  <th>
-                    Nome:
-                  </th>
-                  <th>
-                    Telefone:
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                </tr>
-              </tbody>
-              <tfoot>
-              </tfoot>
-            </table>
-          </div>
+    <div class="sobre-container grid" id="sobre">
+      <div class="sobre-imagem">
+        <img src="./images/sobre-imagem.jpg" alt="">
       </div>
-        <div class="numeros-container">
-          <div class="numero">            
-            <p>Contatos:</p>
-            <p id="resultadoFinal">0</p>
+      <div class="sobre-conteudo">
+        <div class="sobre-titulo">
+          <h1>Quem Somos</h1>
+        </div>
+        <div class="sobre-texto">
+          <p>Somos um portal de música que traz os melhores lançamentos nacionais e internacionais para os amantes da
+            música. Com uma equipe apaixonada por música e antenada nas últimas tendências do mercado, estamos sempre em
+            busca do melhor conteúdo para levar aos nossos leitores. Desde pop até rock, passando pelo hip-hop e
+            eletrônico, nosso objetivo é informar e entreter nossos seguidores com o que há de mais novo e interessante
+            no mundo da música. Junte-se a nós e descubra as novidades que vão fazer você vibrar!</p>
+          <small>Texto gerado pelo ChatGPT</small>
+
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="lancamentos-container grid" id="lancamentos">
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/flora-matos-flora-de-controle.jpg" alt="Flora Matos - Flora de Controle">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>Flora Matos - Flora de Controle</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
           </div>
         </div>
-    </div>
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/tyler-the-creator-flower-boy.webp" alt="Tyler, The Creator - Flower Boy">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>Tyler, The Creator - Flower Boy</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
+          </div>
+        </div>
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/fbc-baile.webp" alt="F.B.C. - Baile">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>F.B.C. - Baile</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
+          </div>
+        </div>
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/kendrick-lamar-good-kid-maad-city.jpg" alt="Kendrick Lamar - good kid, m.A.A.d city">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>Kendrick Lamar - good kid, m.A.A.d city</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
+          </div>
+        </div>
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/froid-teoria-do-ciclo-da-agua.png" alt="Froid - Teoria do Ciclo da Água">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>Froid - Teoria do Ciclo da Água</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
+          </div>
+        </div>
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/marina-sena-vicio-inerente.webp" alt="Marina Sena - Vício Inerente">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>Marina Sena - Vício Inerente</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
+          </div>
+        </div>
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/chet-faker-thinking-in-textures.jpg" alt="Chet Faker - Thinking in Textures">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>Chet Faker - Thinking in Textures</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
+          </div>
+        </div>
+        <div class="lancamentos">
+          <div class="lancamento-imagem">
+            <img src="./images/bala-desejo-sim-sim-sim.jpg" alt="Bala Desejo - Sim, Sim, Sim">
+          </div>
+          <div class="lancamento-infos">
+            <div class="lancamento-texto">
+              <h6>Bala Desejo - Sim, Sim, Sim</h6>
+            </div>
+            <div class="lancamento-button">
+              <button>Ouça Agora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <script src="https://kit.fontawesome.com/71b4e182b5.js" crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
+  <footer>
+    <div class="footer-logo">
+      <img src="./images/logo.png" alt="Logo Música e Música">
+    </div>
+  </footer>
 </body>
+
 </html>
