@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓';
+  font-weight: bolder;
+  color: #7d27df;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background: #eaeaea;
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+}
+
+header{
+  padding: 2rem;
+  color: #eaeaea;
+  background: #7d27df;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#formContainer{
+  width: 30vw;
+  text-align: center;
+}
+#cadastrar {
+  width: 100%;
+  max-width: none;
+  background: #7d27df;
+  color: #eaeaea;
+}
+
+#cadastrar:hover{
+  background: #5815a5;
+  color: #eaeaea;
+  font-weight: bold;
+  outline: #7d27df;
+}
+
+#form {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+
+#tarefaInput, #cadastrar {
+  padding: .25rem;
+  width: 100%;
+  max-width: none;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#tarefaInput:focus{
+  outline: 1px solid #7d27df;
+}
+
+#tarefas{
+  text-align: left;
+}
