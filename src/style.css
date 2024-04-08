@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar,
+.musica {
+  background: #222;
+}
+
+.navbar-brand{
+  color: #d9d9d9;
+}
+
+#header .nav-link {
+  color: #d9d9d9;
+  transition: color ease 0.5s;
+}
+
+#header .nav-link:hover,
+.navbar-brand:hover {
+  color: #eea20a;
+}
+
+.nav-link.active {
+  background: #eea20a !important;
+  color: #222 !important;
+}
+
+.nav-link.active:hover,
+#contato button:hover {
+  background: #f4f4f4 !important;
+  color: #eea20a !important;
+}
+
+.navbar-toggler {
+  background: #d9d9d9;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-item > img {
+  width: 100%;
+  height: 60%;
+  object-fit: fill;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sobre-texto{
+  background: #efefef;
+}
+
+.titulo {
+  text-transform: uppercase;
+}
+
+
+.bold, .detalhe {
+  font-weight: 600;
+}
+
+.detalhe {
+  position: relative;
+}
+
+.detalhe::after {
+  content: "";
+  width: 100%;
+  height: .2rem;
+  background: #eea20a;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.musica h3,
+.musica h4,
+.musica p {
+  color: #d9d9d9;
+}
+
+.nav-cardapio .nav-link{
+  color: #000;
+}
+
+.nav-cardapio .nav-link:hover{
+  color: #eea20a;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links i{
+  color: #eea20a
+}
+
+#contato button {
+  background: #eea20a;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .carousel slide {
+    height: 0vh;
+  }
+}
