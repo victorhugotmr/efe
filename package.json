@@ -1,0 +1,15 @@
+{
+  "name": "sass-mod15",
+  "version": "1.0.0",
+  "description": "exercicio do módulo 15 do curso de engenharia front end da ebac",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass source/styles.scss src/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.74.1"
+  }
+}
