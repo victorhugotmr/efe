@@ -1,1 +1,1 @@
-console.log("Olá mundo!"),console.log(!0);
+console.log("Olá mundo!"),console.log(!0);const today=new Date,yyyy=today.getFullYear();let mm=today.getMonth()+1,dd=today.getDate();dd<10&&(dd="0"+dd),mm<10&&(mm="0"+mm);const formattedToday=dd+"/"+mm+"/"+yyyy;console.log(formattedToday);
